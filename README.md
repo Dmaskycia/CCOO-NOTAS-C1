@@ -62,7 +62,7 @@
     <div class="logo">
         <img src="29N2014dignidadyderechos.jpg" alt="Logo">
     </div>
-    <h1>Calculadora de Puntuación para Opositores C1 Estabilización,  esta simulacion puede contener errores y no tiene valor documental</h1>
+    <h1>Calculadora de Puntuación para Opositores C1 Estabilización,  esta simulacion puede contener errores y no tiene valor documental.</h1>
     <form id="calculatorForm">
         <label for="correct1">Aciertos en la primera parte (70 preguntas):</label>
         <input type="number" id="correct1" required><br>
