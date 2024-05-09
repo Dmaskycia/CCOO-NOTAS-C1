@@ -62,15 +62,15 @@
     <div class="logo">
         <img src="29N2014dignidadyderechos.jpg" alt="Logo">
     </div>
-    <h1>Calculadora de Puntuación para Opositores C2 Estabilización,  esta simulacion puede contener errores y no tiene valor documental</h1>
+    <h1>Calculadora de Puntuación para Opositores C1 Estabilización,  esta simulacion puede contener errores y no tiene valor documental</h1>
     <form id="calculatorForm">
-        <label for="correct1">Aciertos en la primera parte (50 preguntas):</label>
+        <label for="correct1">Aciertos en la primera parte (70 preguntas):</label>
         <input type="number" id="correct1" required><br>
 
         <label for="wrong1">Errores en la primera parte:</label>
         <input type="number" id="wrong1" required><br>
 
-        <label for="correct2">Aciertos en la segunda parte (25 preguntas):</label>
+        <label for="correct2">Aciertos en la segunda parte (30 preguntas):</label>
         <input type="number" id="correct2" required><br>
 
         <label for="wrong2">Errores en la segunda parte:</label>
@@ -89,18 +89,18 @@
 
             const penalties1 = wrong1 * (1/3);
             const netCorrect1 = correct1 - penalties1;
-            const score1 = (netCorrect1 * 3) / 50;
+            const score1 = (netCorrect1 * 3) / 70;
 
             const penalties2 = wrong2 * (1/3);
             const netCorrect2 = correct2 - penalties2;
-            const score2 = (netCorrect2 * 3) / 25;
+            const score2 = (netCorrect2 * 3) / 30;
 
             const totalCorrect = correct1 + correct2;
             const totalWrong = wrong1 + wrong2;
             const totalPenalties = totalWrong * (1/3);
             const totalNetCorrect = totalCorrect - totalPenalties;
             const adjustedTotalNetCorrect = Math.max(0, totalNetCorrect);
-            const totalScore = ((adjustedTotalNetCorrect / 75) * 6);
+            const totalScore = ((adjustedTotalNetCorrect / 100) * 6);
 
             const resultDiv = document.getElementById('result');
             const isInBolsa = score1 >= 0.9;
