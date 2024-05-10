@@ -1,4 +1,3 @@
-# CCOO C1
 <html lang="es">
 <head>
     <meta charset="UTF-8">
